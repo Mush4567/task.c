@@ -1,13 +1,21 @@
 #include <stdio.h>
 int main(){
-    double fact = 1;
-    int n = 0;
-    scanf("%d",&n);
-    for(int i=n;i>0;i--){
-        fact *= i;
-    }
-        printf("%0.lf ",fact);
-        printf("\n");
-        return 0;
+	int num = 0;
+	printf("Enter the number: ");
+	scanf("%d", &num);
+	int a = 0;
+	int b = 0;
+
+        for(int i = 1;i <= num;i++){
+		b = i;
+                while(b){
+			a++;
+			printf("%d", a);
+			b--;
+		}
+                printf("\n");
+
+        }
+
 }
 
